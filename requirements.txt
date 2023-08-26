@@ -5,5 +5,4 @@ pdfplumber==0.10.2
 joblib==1.2.0
 docx2txt==0.8
 regex==2022.10.31
-sklearn==0.0.post7
 nltk==3.8.1
