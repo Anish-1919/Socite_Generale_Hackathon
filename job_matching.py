@@ -61,7 +61,7 @@ def extract_skills(text):
     
     
     # Extract skills from the text using regex
-    extracted_skills = [skill for skill in skills_list if re.search(r'\b' + skill + r'\b', text, re.IGNORECASE)]
+    extracted_skills = [skill for skill in skills_list if re.search(r'\b' + re.escape(skill) + r'\b', text, re.IGNORECASE)]
     return extracted_skills
 
 def main():
